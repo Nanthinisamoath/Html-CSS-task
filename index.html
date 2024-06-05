@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+          color: orange;
+        }
+        .star{
+            color:red;
+        }
+        .space{
+            display:flex ;width:100%;
+            justify-content:space-evenly;
+            
+        }
+        .space1{
+            display:flex ;width:100%;
+            justify-content:space-evenly;
+            position: relative;
+            /* left: -30px; */
+        }
+        .container{
+            background-color: rgb(183, 176, 176);
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+             gap: 10px;   
+            }
+            .container1{
+            background-color: rgb(183, 176, 176);
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+             gap: 20px;   
+            }
+            .container2{
+            background-color: rgb(183, 176, 176);
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            position: relative;
+            }
+        .paragraph{
+            display: flex;
+            justify-content:space-evenly;
+        }
+        .nan{
+            margin-left: 30px;
+        }
+        .nan1{
+           position: relative;
+           right: 30px;
+        }
+        .nan2{
+           position: relative;
+           right: 30px;
+        }
+        .nan3{
+           position: relative;
+           right: 30px;
+        }
+         </style>
+</head>
+<body>
+        <form >
+        <div>
+            <label><b>FirstName <sup class="star">*</sup></b></label>
+                <input type="Firstname"placeholder= "Enter the Firstname" id="FirstName" name="FirstName">
+                <label><b>LastName <sup class="star">*</sup></b></label>
+                <input type="Last Name"placeholder= "Enter the LastName" id="LastName" name="LastName">
+        </div>
+        <br>
+    <div>
+        <label><b>Email <sup class="star">*</sup></b></label><br>
+        <input type="Email"placeholder= "Enter the Email" id="Email" name="Email">
+    </div>
+    <br>
+    <label><b>Your Experience <sup class="star">*</sup></b></label><br>
+    <div class="checked">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    </div>
+    <h4>Overall,how would you rate your Experience with us?</h4>
+    <h2>How satified are you with?  <sup class="star">*</sup></h2>
+    <div class="outline"></div>
+   <div class="paragraph">
+    <p></p>
+    <p>Very unsatisfied </p>
+    <p class="nan1">Unsatisfied</p>
+    <p class="nan2">Satisfied</p>
+    <p class="nan3">Neutral</p>
+    <p>Very satisfied</p>
+   </div>
+    <div class="container">
+        <label><b>Purchase</b></label>
+        <div class="space">
+                    <input type="radio" id="purchase" name="purchase" value="3">
+                    <input type="radio" id="purchase" name="purchase" value="3">
+                    <input type="radio" id="purchase" name="purchase" value="3">
+                    <input type="radio" id="purchase" name="purchase" value="3">
+                    <input type="radio" id="purchase" name="purchase" value="3">
+        </div>
+</div><br>
+<div class="container1">
+    <label><b>Service</b></label>
+    <div class="space">
+                    <input type="radio" id="service" name="service" value="3">
+                    <input type="radio" id="service" name="service" value="3">
+                    <input type="radio" id="service" name="service" value="3">
+                    <input type="radio" id="service" name="service" value="3">
+                    <input type="radio" id="service" name="service" value="3">
+    </div>
+</div><br>
+<div class="container2">
+    <label><b>Company </b></label>
+    <div class="space1">
+                    <input type="radio" id="company overall" name="company overall" value="3">
+                    <input type="radio" id="company overall" name="company overall" value="3">
+                    <input type="radio" id="company overall" name="company overall" value="3">
+                    <input type="radio" id="company overall" name="company overall" value="3">
+                    <input type="radio" id="company overall" name="company overall" value="3">
+    </div>
+</div><br>
+    <h2>How likely you are to <sup class="star">*</sup></h2>
+    <div class="paragraph">
+        <p></p>
+        <p class="nan">Very unlikely </p>
+        <p>unlikely</p>
+        <p>likely</p>
+        <p>Neutral</p>
+        <p>Very likely</p>
+       </div>
+    <div class="container">
+    <label><b>Buy the products from us again</b></label>
+    <div class="space">
+                    <input type="radio" id="Buy from us again" name="Buy from us again" value="3">
+                    <input type="radio" id="Buy from us again" name="Buy from us again" value="3">
+                    <input type="radio" id="Buy from us again" name="Buy from us again" value="3">
+                    <input type="radio" id="Buy from us again" name="Buy from us again" value="3">
+                    <input type="radio" id="Buy from us again" name="Buy from us again" value="3">
+                    </div>
+                    </div><br>
+                    <div class="container">
+    <label><b>Recommend our product to others</b></label>
+    <div class="space">
+                    <input type="radio" id="Recommend our product to others" name="Recommend our product to others" value="3">
+                    <input type="radio" id="Recommend our product to others" name="Recommend our product to others" value="3">
+                    <input type="radio" id="Recommend our product to others" name="Recommend our product to others" value="3">
+                    <input type="radio" id="Recommend our product to others" name="Recommend our product to others" value="3">
+                    <input type="radio" id="Recommend our product to others" name="Recommend our product to others" value="3">
+                    </div>
+                    </div><br>               
+    <div class="container">
+    <label><b>Recommend our company to others</b></label>
+    <div class="space">
+                    <input type="radio" id="Recommend our company to others " name="Recommend our company to others" value="3">
+                    <input type="radio" id="Recommend our company to others " name="Recommend our company to others" value="3">
+                    <input type="radio" id="Recommend our company to others " name=" Recommend our company to others"value="3">
+                    <input type="radio" id="Recommend our company to others " name="Recommend our company to others" value="3">
+                    <input type="radio" id="Recommend our company to others " name="Recommend our company to others" value="3">
+                    </div>
+                    </div><br>
+    <h2>Additional comment or suggestions</h2>
+    <div>
+        <textarea placeholder="Comment or suggestions" id=" comment or suggestions"name= "comment or suggestions"></textarea>
+    </div><br>
+    <button>Submit</button>
+</div>
+</form>
+</body>
+</html>
